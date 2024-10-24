@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật Hồ Linh</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+        .letter {
+            width: 300px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .letter:hover {
+            transform: scale(1.05);
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            color: #333;
+            font-size: 18px;
+            border-top: 2px dashed #ff69b4;
+            padding-top: 10px;
+        }
+        .flower {
+            width: 30px;
+            height: 30px;
+            background-image: url(''); /* Thay bằng URL hình hoa bạn muốn */
+            background-size: cover;
+            position: absolute;
+        }
+        .flower1 { top: 10px; left: 20px; }
+        .flower2 { top: 10px; right: 20px; }
+        .flower3 { bottom: 10px; left: 20px; }
+        .flower4 { bottom: 10px; right: 20px; }
+        .flower5 { top: 50px; left: 50%; transform: translateX(-50%); }
+
+        .cake {
+            width: 60px;
+            height: 60px;
+            background-image: url(''); /* Thay bằng URL hình bánh kem bạn muốn */
+            background-size: cover;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce {
+            0% {
+                transform: translate(-50%, 0);
+            }
+            100% {
+                transform: translate(-50%, -10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="letter" onclick="toggleMessage()">
+        <div class="https://images.app.goo.gl/eg2eEhBikaQvNgLUA"></div>
+        <div class="flower flower2"></div>
+        <div class="flower flower3"></div>
+        <div class="flower flower4"></div>
+        <div class="flower flower5"></div>
+        <h2>MẬT THƯ</h2>
+        <p>Nhấn vào để mở</p>
+        <div class="message" id="birthdayMessage">
+            <h3>Chúc Hồ Linh một sinh nhật thật vui vẻ và ý nghĩa!</h3>
+            <p>Hy vọng tất cả những điều tốt đẹp sẽ đến với bạn!Chúc bạn tuổi mới ngày càng xinh đẹp.Sớm có bồ bạn nhé hehe<3</p>
+        </div>
+        <div class="cake"></div>
+    </div>
+
+    <script>
+        function toggleMessage() {
+            const message = document.getElementById('birthdayMessage');
+            message.style.display = message.style.display === 'none' || message.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
+
